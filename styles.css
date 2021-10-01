@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(240, 239, 239);
+  font-size: 1rem;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+.card {
+  background-color: rgb (60, 179, 113);
+  padding: 1rem;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+.grid {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+.card img {
+  height: 16em;
+  filter: grayscale(100%);
+}
