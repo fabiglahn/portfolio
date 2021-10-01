@@ -1,29 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-body {
-  background-color: rgb(240, 239, 239);
-  font-size: 1rem;
-}
+
 html {
+  font-size: 24px;
   font-family: sans-serif;
   line-height: 1.15;
 }
+
+p {
+  color: rgb (60, 179, 113);
+}
+
+body {
+  background-color: white;
+  font-size: 1rem;
+  font-family: "Yaldevi", sans-serif;
+  font-weight: 200;
+}
+
 .card {
-  background-color: rgb (60, 179, 113);
+  color: rgb(240, 239, 239);
+  background-color: black;
   padding: 1rem;
   border-radius: 8px;
   display: grid;
   place-items: center;
+  font-family: "Yaldevi", sans-serif;
+  line-height: 1,8;
 }
+.grid-oben {
+    display: grid;
+    grid-template-columns: 1fr
+    font-family: "Yaldevi", sans-serif;
+    text-align: justify;
+}
+
 .grid {
   display: grid;
   gap: 1em;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Yaldevi", sans-serif;
 }
 .card img {
   height: 16em;
   filter: grayscale(100%);
+  font-family: "Yaldevi", sans-serif;
+}
+.card:hover {
+  background-color: rgb(100, 99, 99);
+}
+h2 {
+  color: rgb(60, 179, 113);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+h3 {
+  color: rgb(60, 179, 113);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
 }
