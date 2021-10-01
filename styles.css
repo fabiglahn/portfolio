@@ -15,6 +15,12 @@ p {
   color: rgb (60, 179, 113);
 }
 
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(58, 109, 140);
+}
+
 body {
   background-color: white;
   font-size: 1rem;
@@ -24,19 +30,39 @@ body {
 
 .card {
   color: rgb(240, 239, 239);
-  background-color: black;
+  background-color: rgb(44, 43, 43);
   padding: 1rem;
   border-radius: 8px;
   display: grid;
   place-items: center;
   font-family: "Yaldevi", sans-serif;
-  line-height: 1,8;
+  line-height: 1, 8;
+  text-align: center;
 }
 .grid-oben {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Yaldevi", sans-serif;
+  text-align: justify;
+  place-items: center;
+  font-size: 24px;
+
+}
+
+.grid-oben img {
+  width: 100%;
+}
+
+.card-oben {
+    color: rgb(240, 239, 239);
+    background-color: black;
+    padding: 1rem;
+    border-radius: 8px;
     display: grid;
-    grid-template-columns: 1fr
+    place-items: center;
     font-family: "Yaldevi", sans-serif;
-    text-align: justify;
+    line-height: 1, 8;
+    text-align: center;
 }
 
 .grid {
@@ -54,13 +80,60 @@ body {
   background-color: rgb(100, 99, 99);
 }
 h2 {
-  color: rgb(60, 179, 113);
+  color: #027333;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 h3 {
-  color: rgb(60, 179, 113);
+  color:#3A6D8C;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-
 }
+#social-test {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    h2 {
+      color: #fff;
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+      font-weight: 100;
+    }
+    .social {
+      padding-left: 0px;
+    }
+    li {
+      color: rgba(167, 146, 129, 0.6);
+      list-style-type: none;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      padding: 1%;
+      border: 1px solid rgba(167, 146, 129, 0.4);
+      cursor: pointer;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      transition: ease .3s;
+      &:hover {
+        color: rgba(167, 146, 129, 1);
+        border: 1px solid rgba(167, 146, 129, 1);
+      }
+    }
+  }
+  
+  .social:hover > li {
+    opacity: 0.5;
+  }
+  
+  .social:hover > li:hover {
+    opacity: 1;
+  }
+
+
+Note: Color Range https://color.adobe.com/de/trends/Graphic-design
+schwarz: RGB 7, 7, 13
+dunkleres blau: RGB 38, 79, 115
+helleres blau: RGB 58, 109, 140
+knalliges grün: RGB 17, 191, 110
+dunkleres grün: RGB 2, 115, 51
