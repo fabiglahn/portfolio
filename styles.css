@@ -68,19 +68,6 @@ color: white;
   line-height: 1, 8;
   text-align: center;
 }
-.grid-oben {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-family: "Yaldevi", sans-serif;
-  text-align: justify;
-  place-items: center;
-  font-size: 24px;
-
-}
-
-.grid-oben img {
-  width: 100%;
-}
 
 .card-oben {
     color: rgb(240, 239, 239);
@@ -109,9 +96,10 @@ color: white;
   background-color: rgb(100, 99, 99);
 }
 h2 {
-  color: #027333;
-  ffont-family: "Yaldevi", sans-serif;
+  color: rgb(17, 191, 110);
+  font-family: "Yaldevi", sans-serif;
   font-weight: 400;
+  padding: 10px;
 }
 h3 {
   color:#3A6D8C;
@@ -119,9 +107,30 @@ h3 {
   font-weight: 300;
 }
 
-.social-icons{
-width: 20px;
-height: 20px;
+
+/* Versuch2 */
+
+.intro {
+    display: grid;
+    background-color: RGB(58, 109, 140);
+    grid-template-rows: 600px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
+    padding: 15px;
+}
+
+.profilepic {
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+.intro h2 {
+    color: white
+}
+
+.intro p {
+    color: white;
 }
 
  /* NOTES */
