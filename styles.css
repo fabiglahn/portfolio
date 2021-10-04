@@ -9,11 +9,21 @@ html {
   font-size: 24px;
   font-family: sans-serif;
   line-height: 1.15;
+  scroll-behavior: smooth;
 }
+
+body {
+    background-color: white;
+    font-size: 1rem;
+    font-family: "Yaldevi", sans-serif;
+    font-weight: 200;
+  }  
 
 p {
   color: rgb (60, 179, 113);
 }
+
+  /* NAVIGATION & HEADER */
 
 header {
     width: 100%;
@@ -21,12 +31,31 @@ header {
     background-color: rgb(58, 109, 140);
 }
 
-body {
-  background-color: white;
-  font-size: 1rem;
-  font-family: "Yaldevi", sans-serif;
-  font-weight: 200;
+.navigation {
+    position: absolute;
+    top: 5%;
+    right: 5%;
 }
+
+.navigation a {
+display: inline-block;
+color: white;
+   font-size: 1rem;
+   font-family: "Yaldevi", sans-serif;
+   padding: 1rem;
+   text-decoration: none;
+   background-color: rgb(17, 191, 110);
+   border-radius: 1px;
+   transition: all .3s;
+}
+
+.navigation a:hover {
+   border-radius: 5px;
+   background-color:rgb(17, 191, 110);
+   transform: translateY(2px);
+}
+
+/* MAIN SECTION */
 
 .card {
   color: rgb(240, 239, 239);
@@ -81,12 +110,12 @@ body {
 }
 h2 {
   color: #027333;
-  font-family: "Roboto", sans-serif;
+  ffont-family: "Yaldevi", sans-serif;
   font-weight: 400;
 }
 h3 {
   color:#3A6D8C;
-  font-family: "Roboto", sans-serif;
+  font-family: "Yaldevi", sans-serif;
   font-weight: 300;
 }
 
@@ -95,8 +124,10 @@ width: 20px;
 height: 20px;
 }
 
+ /* NOTES */
 
-Note: Color Range https://color.adobe.com/de/trends/Graphic-design
+
+Color Range https://color.adobe.com/de/trends/Graphic-design
 schwarz: RGB 7, 7, 13
 dunkleres blau: RGB 38, 79, 115
 helleres blau: RGB 58, 109, 140
